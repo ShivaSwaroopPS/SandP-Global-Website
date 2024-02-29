@@ -1,2 +1,2 @@
 # SandP-Global-Website
-A career Website for S&amp;P Global
+A career Website for SandP Global
