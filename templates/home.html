@@ -18,6 +18,7 @@
         width: 100%;
         height: 360px;
         object-fit: cover;
+        margin-bottom:16px;
       }
 
       h2 {
@@ -40,15 +41,24 @@
     </style>
   </head>
   <body>
-    
+    {% include 'nav.html' %}
+     <h1 class="text-center mt-2 mb-4">S&P Careers</h1>
+     <img class="img-fluid" id="banner" src="static/SandPimg.webp", height="320">
     <div class="container">
-    <h1 class="text-center mt-2 mb-4">S&P Careers</h1>
-    <img class="img-fluid" id="banner" src="static/SandPimg.webp", height="320">
+   
+   
     <h2>About S&P Global</h2>
+    <div class="row">
+      <div class ="col-md-6">
     <p class="lead">Find your place in S&P Global's legacy
     For over 160 years, generations of visionaries and thinkers have brought transparency and trust into business, working to provide customers around the world with the Essential Intelligence® needed to make decisions with conviction.
       We are the world’s foremost provider of credit ratings, benchmarks and analytics in the global capital and commodity markets, offering ESG solutions, deep data and insights on critical economic, market and business factors.
 </p>
+  </div>
+  <div class ="d-none d-md-block col-md-6">
+      <img src="static/overview_banner_1800x912.jpg" class="img-fluid" height="320" >
+  </div>  
+    </div>
     <h2>Open Positions</h2>
        
     <div>
@@ -61,6 +71,8 @@
       
     <button class="btn btn-primary btn-lg"">Contact Us</button>
     </div>
+
+    {% include 'footer.html' %}
       
   </body>
 </html>
